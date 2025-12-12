@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Beyond UI</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+  <!-- Navigation -->
   <nav class="navbar">
     <div class="logo">Beyond UI</div>
     <ul class="nav-links">
-      <li><a href="#">Homepage</a></li>
-      <li><a href="#">About us</a></li>
-      <li><a href="#">Features</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact us</a></li>
+      <li><a href="#home">Homepage</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact us</a></li>
     </ul>
     <div class="nav-buttons">
       <button class="demo-btn">Demo</button>
@@ -23,38 +24,73 @@
     </div>
   </nav>
 
-
-  <section class="hero">
-    <p class="version-badge">☀️ 2.0 version is here</p>
-    <h1>Welcome to the <br><span class="italic">innovation</span> oasis</h1>
-    <p class="hero-text">
-      Step into our innovation oasis, where groundbreaking ideas bloom,<br>
-      and every click is a step into a world of endless possibilities.
-    </p>
-    <div class="hero-buttons">
-      <button class="primary-btn">Get Started</button>
-      <button class="outline-btn">Watch Demo</button>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <p class="version-badge">🌞 2.0 version is here</p>
+        <h1>Welcome to the <span class="highlight">innovation</span> oasis</h1>
+        <p class="hero-text">
+          Step into our innovation oasis, where groundbreaking ideas bloom,<br>
+          and every click is a step into a world of endless possibilities.
+        </p>
+        <div class="hero-buttons">
+          <button class="primary-btn">Get Started</button>
+          <button class="outline-btn">Watch Demo</button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="phone-preview.png" alt="App preview showing financial dashboard" class="phone-img" />
+      </div>
     </div>
   </section>
 
-
+  <!-- Stats Section -->
   <section class="stats">
-    <div class="stat">$14B Funds & Syndicates</div>
-    <div class="stat">80k Active Members</div>
-    <div class="stat">27k+ Raised by Startups</div>
+    <div class="stat-card">
+      <div class="stat-value">$14B</div>
+      <div class="stat-label">Funds & Syndicates</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">80k</div>
+      <div class="stat-label">Active Members</div>
+      <div class="avatars">
+        <img src="avatar-1.png" alt="Member 1" />
+        <img src="avatar-2.png" alt="Member 2" />
+        <img src="avatar-3.png" alt="Member 3" />
+        <img src="avatar-4.png" alt="Member 4" />
+        <img src="avatar-5.png" alt="Member 5" />
+        <img src="avatar-6.png" alt="Member 6" />
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">27k+</div>
+      <div class="stat-label">Raised by Startups</div>
+    </div>
   </section>
 
+  <!-- Partners Section -->
   <section class="partners">
-    <img src="Screenshot 2025-12-12 at 14-55-14 Design challenge 03 Beyond UI redesign by Amarachi Ukoha on Dribbble.png" alt="Flux company logo ">
-    <img src="Screenshot 2025-12-12 at 14-57-29 Design challenge 03 Beyond UI redesign by Amarachi Ukoha on Dribbble.png" alt="Pulse Co. company logo">
-    <img src="Screenshot 2025-12-12 at 14-57-02 Design challenge 03 Beyond UI redesign by Amarachi Ukoha on Dribbble.png" alt="Lumo Tech company logo">
-    <img src="Screenshot 2025-12-12 at 14-53-45 Design challenge 03 Beyond UI redesign by Amarachi Ukoha on Dribbble.png" alt="Stella company logo">
-    <img src="Screenshot 2025-12-12 at 15-06-04 Design challenge 03 Beyond UI redesign by Amarachi Ukoha on Dribbble.png" alt="Swifty company logo">
-  </section>
-
-
-  <section class="visual">
-    <img src="photo-1716279083559-ffc3a863c457.avif" alt="App preview showing investment dashboard ">
+    <div class="partner">
+      <img src="logo-flux.png" alt="Flux logo" />
+      <p>Flux</p>
+    </div>
+    <div class="partner">
+      <img src="logo-pulse.png" alt="Pulse Co. logo" />
+      <p>Pulse Co.</p>
+    </div>
+    <div class="partner">
+      <img src="logo-lumo.png" alt="Lumo Tech logo" />
+      <p>Lumo Tech</p>
+    </div>
+    <div class="partner">
+      <img src="logo-stella.png" alt="Stella logo" />
+      <p>Stella</p>
+    </div>
+    <div class="partner">
+      <img src="logo-swifty.png" alt="Swifty logo" />
+      <p>Swifty</p>
+    </div>
   </section>
 
 </body>
